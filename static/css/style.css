@@ -1,0 +1,264 @@
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body{
+    font-family: "微軟正黑體", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-top{
+    background-size: cover;
+    background-position: center top;
+}
+
+.bg-bottom{
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.bg-hover{
+
+    background-color:rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.bg-hover-text{
+    color:white;
+    z-index: 999;
+    transition: all 0.8s;
+}
+.bg-hover:hover{
+    background-color:rgba(0,0,0,0);
+}
+
+.bg-hover:hover .bg-hover-text{
+    text-shadow: 2px 2px 6px rgba(0, 0, 0,0.8);
+}
+.bg-gray {
+    background-color: #e3e3e7;
+}
+
+.bg-crops{
+    background-color: #D3AA4F;
+}
+
+.text-gray{
+    color:#727171;
+}
+
+.text-smaller{
+    font-size:10px;
+}
+
+.text-small{
+    font-size:12px;
+}
+
+.text-14{
+    font-size: 14px;
+}
+
+.text-middle{
+    font-size: 18px;
+}
+
+.text-line-height{
+    line-height: 1.2em;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-18{
+    margin-top: 18px;
+}
+
+.mt-minus-s {
+    margin-top: -20px;
+}
+
+.box{
+    width:500px;
+    height:500px;
+    background-color: white;
+}
+
+.box-sm{
+    max-width:320px;
+    background-color: white;
+}
+
+.vegetable-box{
+    width:50%;
+}
+
+@media(max-width:600px){
+    .box{
+        max-width:100%;
+    }
+    .vegetable-box{
+        max-width:50%;
+    }
+}
+
+.text-bg-blue{
+    background-color: #91cbd1;
+    border-radius: 50px;
+}
+
+.text-bg-red{
+    background-color: #cf988f;
+    border-radius: 50px;
+}
+
+.btn-width{
+    padding:5px 30px;
+}
+.text-line-height{
+    line-height: 2em;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+/* Pagination style */
+.pagination > li > a
+{
+    background-color: white;
+    color: #000000;
+    border: 0;
+    
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #000000;
+    background-color: #eee;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #000000 !Important;
+    border: solid 1px #000000 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #000000 !Important;
+    border: solid 1px #000000;
+}
+
+.card-shadow{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0,0.3);
+}
+
+/* Swiper */
+
+/* swiper-wrap 為客製新增之 class，非套件內容 */
+.swiper-wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -90px;
+}
+
+.swiper-container {
+width: 60%;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+align-self: start;
+}
+
+.swiper-slide {
+background-size: cover;
+background-position: center;
+}
+
+.gallery-top {
+height: 80%;
+width: 60%;
+}
+
+.gallery-thumbs {
+height: 40%;
+box-sizing: border-box;
+padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+height: 60%;
+opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+opacity: 1;
+}
+
+@media (min-width:768px) and (max-width:960px){
+    .gallery-top {
+    width: 80%;
+    }
+}
+
+@media (min-width:768px) and (max-width:960px){
+    .swiper-container {
+    width: 80%;
+    }
+}
+
+@media (max-width:767px){
+    .gallery-top {
+    width: 95%;
+    }
+    .swiper-container {
+    width: 95%;
+    }
+}
+
+@media (max-width:567px){
+    .swiper-wrap{
+    margin-bottom: -150px;
+    }
+    .bg-cover{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width:414px){
+    .bg-cover-s{
+        max-width: 240px;
+        max-height: 240px;
+    }
+}
+
+/* Dropdown Columns */
+div.dropdown-multicol2{
+  width: 30em;
+}
+div.dropdown-multicol2>div.dropdown-col{
+  display:inline-block;
+  width: 32%;
+}
+
